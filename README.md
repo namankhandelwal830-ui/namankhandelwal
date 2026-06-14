@@ -15,6 +15,7 @@
 - Pandas
 - NumPy
 - Matplotlib
+- ScikitLearn
 
 🎯 2026 Goals
 - Solve 300+ LeetCode Problems
