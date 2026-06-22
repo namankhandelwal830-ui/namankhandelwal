@@ -7,6 +7,7 @@
 - Machine Learning
 - Data Analysis
 - Software Development
+- FrontEnd Development 
 
 🛠️ Tech Stack
 - Python
@@ -16,10 +17,14 @@
 - NumPy
 - Matplotlib
 - ScikitLearn
+- HTML
+- CSS
+- JAVASCRIPT 
 
 🎯 2026 Goals
 - Solve 300+ LeetCode Problems
 - Build AI/ML Projects
+- BUild AI based Web Dev Projects 
 - Contribute to Open Source
 - Secure a Software/AI Internship
 
