@@ -1,0 +1,138 @@
+%-------------------------
+% ATS-Friendly Resume – Naman Khandelwal
+% Target: Deutsche Bank Internship – Technology, Data & Innovation 2026
+%-------------------------
+
+\documentclass[10pt, a4paper]{article}
+
+% ---- Packages ----
+\usepackage[top=0.45in, bottom=0.45in, left=0.60in, right=0.60in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+
+% ---- Document settings ----
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% ---- Section formatting ----
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\uppercase}
+  {}{0em}{}
+  [\vspace{-4pt}\rule{\linewidth}{0.6pt}]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+% ---- Custom commands ----
+\newcommand{\entry}[4]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \small #2 \\
+    \textit{\small #3} & \textit{\small #4}
+  \end{tabular*}%
+}
+
+\newcommand{\entryTwo}[2]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textit{\small #2}
+  \end{tabular*}%
+}
+
+\newenvironment{itemizeCompact}{%
+  \begin{itemize}[leftmargin=12pt, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt]
+  \small
+}{%
+  \end{itemize}\vspace{1pt}
+}
+
+%=============================================================================
+\begin{document}
+%=============================================================================
+
+%---- HEADER -----------------------------------------------------------------
+\begin{center}
+  {\Large \textbf{NAMAN KHANDELWAL}} \\[3pt]
+  \small
+  +91-9068960373 \enspace $\vert$ \enspace
+  \href{mailto:namankhandelwal830@gmail.com}{namankhandelwal830@gmail.com} \enspace $\vert$ \enspace
+  \href{https://www.linkedin.com/in/namankhandelwal-07328a271}{linkedin.com/in/namankhandelwal-07328a271} \enspace $\vert$ \enspace
+  Shimla, India
+\end{center}
+
+\vspace{-3pt}
+
+%---- OBJECTIVE --------------------------------------------------------------
+\section{Professional Summary}
+\small
+Second-year Computer Science undergraduate with hands-on Python software development, machine learning,
+and financial data analytics experience. Built production-grade algorithmic trading systems integrated
+with live brokerage APIs, directly demonstrating the FinTech-engineering intersection.
+Seeking to contribute to Deutsche Bank's \textbf{Technology, Data \& Innovation} division through the
+\textbf{Development} track, applying strong programming fundamentals to real-world banking technology challenges.
+
+%---- EDUCATION --------------------------------------------------------------
+\section{Education}
+\entry{Jaypee University of Information Technology (JUIT)}{Solan, Himachal Pradesh, India}
+      {Bachelor of Technology -- Computer Science \& Engineering}{July 2024 -- July 2028}
+\begin{itemizeCompact}
+  \item Relevant Coursework: Data Structures \& Algorithms, OOP, Database Management Systems, Discrete Mathematics
+\end{itemizeCompact}
+
+%---- TECHNICAL SKILLS -------------------------------------------------------
+\section{Technical Skills}
+\small
+\begin{tabular*}{\textwidth}{@{}l@{\hspace{6pt}}l@{}}
+  \textbf{Languages:} & Python, C++, SQL, HTML, CSS \\[1pt]
+  \textbf{Libraries \& Frameworks:} & Pandas, NumPy, Matplotlib, Scikit-Learn, Streamlit \\[1pt]
+  \textbf{Developer Tools:} & Git, GitHub, VS Code, Google Colab, REST APIs, MS Office \\[1pt]
+  \textbf{Concepts:} & Machine Learning, Data Analytics, OOP, DSA, Financial Modelling, Agile Basics \\
+\end{tabular*}
+
+%---- PROJECTS ---------------------------------------------------------------
+\section{Projects}
+
+\entryTwo{AlgoNSE -- Algorithmic Trading \& Signal Engine}{Python, REST API, SMC Strategy, Telegram Bot}
+\begin{itemizeCompact}
+  \item Architected a modular Python system integrating Angel One SmartAPI for live NSE/BSE market data ingestion and automated order routing
+  \item Implemented strategy engine using SMC/ICT methodology (Order Blocks, Fair Value Gaps, Break of Structure) for real-time F\&O signal generation
+  \item Built a Telegram bot for subscriber signal delivery with a Razorpay-backed subscription management layer; applied configurable risk controls (stop-loss, position sizing, paper-trade mode)
+\end{itemizeCompact}
+
+\vspace{3pt}
+
+\entryTwo{NSE Stock Analysis \& ML Prediction System}{Python, Scikit-Learn, Pandas, Streamlit, yfinance}
+\begin{itemizeCompact}
+  \item Engineered an end-to-end ML pipeline ingesting live NSE data with preprocessing for missing values, outlier detection, and feature normalisation
+  \item Trained and evaluated classification and regression models (Random Forest, SVM, Linear Regression) for short-term equity price trend prediction
+  \item Deployed an interactive Streamlit dashboard featuring dynamic charts, backtesting results, and model performance metrics
+\end{itemizeCompact}
+
+\vspace{3pt}
+
+\entryTwo{FIFA World Cup 2026 Championship Predictor}{Python, Scikit-Learn, Pandas, Matplotlib}
+\begin{itemizeCompact}
+  \item Developed a data-driven tournament prediction model leveraging historical FIFA match data, team ELO ratings, and goal-based statistics
+  \item Built a Monte Carlo simulation pipeline to model 48-team knockout-bracket win probabilities; presented findings via Matplotlib/Seaborn visualisations
+\end{itemizeCompact}
+
+%---- CERTIFICATIONS ---------------------------------------------------------
+\section{Certifications}
+\begin{itemizeCompact}
+  \item \textbf{Artificial Intelligence Fundamentals} -- IBM SkillsBuild \hfill
+  \item \textbf{SQL and Relational Databases 101} -- IBM Cognitive Class
+  \item \textbf{Claude Code} -- Anthropic
+\end{itemizeCompact}
+
+%---- ADDITIONAL INFORMATION -------------------------------------------------
+\section{Additional Information}
+\begin{itemizeCompact}
+  \item \textbf{Financial Markets:} Active intraday equity and F\&O trader on NSE/BSE; strong practical understanding of derivatives, market microstructure, and financial risk -- directly applicable to banking technology
+  \item \textbf{Languages:} English (Fluent), Hindi (Native)
+  \item \textbf{Interests:} FinTech \& Banking Technology, AI/ML in Finance, Secure Software Development
+\end{itemizeCompact}
+
+%=============================================================================
+\end{document}
+%=============================================================================
